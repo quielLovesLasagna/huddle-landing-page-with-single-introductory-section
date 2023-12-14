@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--cl-violet: hsl(257, 40%, 49%);
+	--cl-soft-magenta: hsl(300, 69%, 71%);
+	--cl-white: #fff;
+	--cl-grey: #d6d5d5;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: var(--cl-violet) url(./images/bg-desktop.svg) no-repeat
+		center/cover;
+	padding: 4rem 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* Header */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 130rem;
+	margin: 0 auto 7rem auto;
+	padding-left: 3rem;
+}
+
+header a img {
+	width: 20rem;
+}
+
+/* Container */
+.container {
+	max-width: 130rem;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+/* Container right */
+.container .right h1 {
+	color: var(--cl-white);
+	font-size: 3.8rem;
+	max-width: 40rem;
+	margin: 3.5rem 0 2.5rem 0;
+	line-height: 1.6;
+}
+
+.container .right p {
+	color: var(--cl-grey);
+	font-size: 1.6rem;
+	max-width: 48rem;
+	padding-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+.container .right button {
+	cursor: pointer;
+	border: none;
+	background-color: var(--cl-white);
+	font-size: 1.4rem;
+	padding: 1.5rem 6rem;
+	border-radius: 100px;
+	color: var(--cl-violet);
+	font-weight: 400;
+	box-shadow: 0 0.6rem 0.5rem rgba(0, 0, 0, 0.2);
+	letter-spacing: 0.5px;
+	transition: all 0.2s;
+}
+
+.container .right button:hover {
+	background-color: var(--cl-soft-magenta);
+	color: var(--cl-white);
+}
+
+/* Footer */
+footer {
+	max-width: 130rem;
+	margin: 2rem auto 0 auto;
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+footer ul li {
+	cursor: pointer;
+	border: 1px solid var(--cl-grey);
+	padding: 1rem;
+	border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s;
+}
+
+footer ul li:not(:last-child) {
+	margin-right: 2rem;
+}
+
+.fa-brands {
+	color: var(--cl-white);
+	font-size: 2rem;
+	transition: all 0.2s;
+}
+
+footer ul li:hover,
+footer ul li:hover .fa-brands {
+	border-color: var(--cl-soft-magenta);
+	color: var(--cl-soft-magenta);
+}
+
+/* .attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+} */
+
+/* Media query: < 1250px */
+@media only screen and (max-width: 78.125em) {
+	body {
+		padding: 4rem;
+	}
+
+	html {
+		font-size: 50%;
+	}
+
+	header {
+		padding-left: 1rem;
+	}
+
+	.container .left {
+		margin-right: 5rem;
+	}
+}
+
+/* Media query: < 850px */
+@media only screen and (max-width: 53.125em) {
+	.container .right h1 {
+		margin: 0 0 2rem 0;
+		line-height: 1.2;
+	}
+}
+
+/* Media query: < 780px */
+@media only screen and (max-width: 48.75em) {
+	body {
+		background: var(--cl-violet) url(./images/bg-mobile.svg) no-repeat
+			top/contain;
+	}
+
+	html {
+		font-size: 43.75%;
+	}
+
+	.container {
+		margin-bottom: 5rem;
+	}
+}
+
+/* Media query: < 650px */
+@media only screen and (max-width: 40.625em) {
+	.container {
+		flex-direction: column;
+	}
+
+	.container .left {
+		margin-bottom: 8rem;
+	}
+
+	.container .right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.container .right h1 {
+		line-height: 1.4;
+	}
+
+	.container .right p {
+		padding: 0;
+		margin-bottom: 4rem;
+		font-size: 2.2rem;
+	}
+
+	.container .right button {
+		margin-bottom: 4rem;
+		padding: 1.5rem 8rem;
+		font-size: 1.6rem;
+	}
+
+	footer ul {
+		justify-content: center;
+	}
+}
+
+/* Media query: < 650px */
+@media only screen and (max-width: 23.4375) {
+	html {
+		font-size: 31.25%;
+	}
+}

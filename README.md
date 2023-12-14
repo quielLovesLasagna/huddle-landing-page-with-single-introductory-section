@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/quielLovesLasagna/huddle-landing-page-with-single-introductory-section](https://github.com/quielLovesLasagna/huddle-landing-page-with-single-introductory-section)
+- Live Site URL: [https://quiel-huddle.netlify.app/](https://quiel-huddle.netlify.app/)
 
 ## My process
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- GitHub - [quielLovesLasagna](https://www.your-site.com)
+- GitHub - [quielLovesLasagna](https://github.com/quielLovesLasagna)
 - Frontend Mentor - [@quielLovesLasagna](https://www.frontendmentor.io/profile/quielLovesLasagna)
